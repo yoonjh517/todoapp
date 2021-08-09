@@ -108,14 +108,26 @@ function App() {
             value={item.description}
             placeholder="description"
           />
-          <button onClick={addItem}>ADD ITEM</button>
+          <button id="addBtn" onClick={addItem}>
+            ADD ITEM
+          </button>
           {items.map((item) => {
             return (
-              <div key={item._id}>
+              <div className="itemList" key={item._id}>
                 <p>{item.title}</p>
                 <p>{item.description}</p>
-                <button onClick={() => deleteItem(item._id)}>DELETE</button>
-                <button onClick={() => openUpdate(item._id)}>UPDATE</button>
+                <button
+                  className="deleteBtn"
+                  onClick={() => deleteItem(item._id)}
+                >
+                  DELETE
+                </button>
+                <button
+                  className="updateBtn"
+                  onClick={() => openUpdate(item._id)}
+                >
+                  UPDATE
+                </button>
               </div>
             );
           })}
@@ -136,7 +148,7 @@ function App() {
             value={updatedItem.description}
             placeholder="description"
           />
-          <button onClick={() => updateItem(updatedItem.id)}>
+          <button id="updateItemBtn" onClick={() => updateItem(updatedItem.id)}>
             UPDATE ITEM
           </button>
         </div>

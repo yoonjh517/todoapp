@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+
+/* main style */
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main input {
+  width: 40%;
+  margin: auto;
+  line-height: 1.618rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.main button {
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main button:hover {
+  transform: scale(1.1);
+}
+#addBtn {
+  margin-top: 2rem;
+  background-color: dodgerblue;
+}
+.main .deleteBtn {
+  background-color: #ff3d3d;
+  margin-right: 0.2rem;
+}
+.main .updateBtn {
+  background-color: #3eaa51;
+  margin-left: 0.2rem;
+}
+#updateItemBtn {
+  background-color: #3eaa51;
+  margin: 2rem auto 0;
+}
+
+.main .itemList p {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.618rem;
+}
